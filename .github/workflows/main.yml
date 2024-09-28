@@ -15,7 +15,7 @@ jobs:
     - name: Install NPM Dependencies
       run: npm install
     - name: Build Site
-      run: npm run production
+      run: npm run prod
     - name: Stage Files
       run: git add -f build_production
     - name: Commit files
