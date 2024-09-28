@@ -9,6 +9,7 @@ hljs.registerLanguage('javascript', require('highlight.js/lib/languages/javascri
 hljs.registerLanguage('json', require('highlight.js/lib/languages/json'));
 hljs.registerLanguage('markdown', require('highlight.js/lib/languages/markdown'));
 hljs.registerLanguage('php', require('highlight.js/lib/languages/php'));
+hljs.registerLanguage('lua', require('highlight.js/lib/languages/lua'));
 hljs.registerLanguage('scss', require('highlight.js/lib/languages/scss'));
 hljs.registerLanguage('yaml', require('highlight.js/lib/languages/yaml'));
 
