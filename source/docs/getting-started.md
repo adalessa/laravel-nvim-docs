@@ -14,6 +14,7 @@ The goal of the plugin is to offer solution out of the box, just install set you
 You need to just add it to you plugin manager
 
 ### Lazy nvim
+Just in case you need a suggestion you can use [lazy](https://github.com/folke/lazy.nvim)
 ```lua
 {
   "adalessa/laravel.nvim",
