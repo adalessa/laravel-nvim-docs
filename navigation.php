@@ -19,4 +19,5 @@ return [
             'Resources' => 'docs/repositories/resources',
         ],
     ],
+    'User Commands' => 'docs/user-commands',
 ];
