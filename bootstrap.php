@@ -2,6 +2,8 @@
 
 use App\Listeners\GenerateSitemap;
 use TightenCo\Jigsaw\Jigsaw;
+use TightenCo\Jigsaw\Parsers\JigsawMarkdownParser;
+use TightenCo\Jigsaw\Parsers\MarkdownParserContract;
 
 /** @var $container \Illuminate\Container\Container */
 /** @var $events \TightenCo\Jigsaw\Events\EventBus */
@@ -19,3 +21,15 @@ use TightenCo\Jigsaw\Jigsaw;
 
 $events->afterBuild(GenerateSitemap::class);
 
+$container->bind(MarkdownParserContract::class, MyMarkdownParser::class);
+
+class MyMarkdownParser extends JigsawMarkdownParser
+{
+    public function __construct() {
+        parent::__construct();
+
+        $this->url_filter_func = function($url) {
+            return str_replace("/assets/img", url("/assets/img"), $url);
+        };
+    }
+}
