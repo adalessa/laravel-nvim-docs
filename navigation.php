@@ -6,5 +6,5 @@ return [
         'children' => [
         ],
     ],
-    /*'Jigsaw Docs' => 'https://jigsaw.tighten.co/docs/installation',*/
+    'Route Info' => 'docs/route-info',
 ];
