@@ -29,7 +29,7 @@ class MyMarkdownParser extends JigsawMarkdownParser
         parent::__construct();
 
         $this->url_filter_func = function($url) {
-            return str_replace("/assets/img", url("/assets/img"), $url);
+            return url($url);
         };
     }
 }

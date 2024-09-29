@@ -69,6 +69,10 @@ This verions looks like
 
 ![route_info_custom](/assets/img/route_info_custom.png)
 
+
+The plugin gets this information from the artisan command `route:list --json` you can explore it to see what variables
+are available.
+
 # Missing Method {#route-info-missing-method}
 
 A common situation is that you defined a route but not implemented, the plugin doesn't want you
