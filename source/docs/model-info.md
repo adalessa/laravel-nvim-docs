@@ -7,15 +7,15 @@ section: content
 
 # Model Info {#model-info}
 
-Given how Eloquent works you don't know which fields are available in the model.
-you need to rely on your memory or checking migration, or opening the table.
-To solve this issue the plugin uses `virtual_text` to show this information on it.
+Given how Eloquent works sometimes it is not clear which fields are available on the model.
+you need to rely on your memory, checking migrations, opening the table, etc...
+To solve this issue the plugin uses `virtual_text` to show the info on it.
 
 ![model_info](/assets/img/model_info.png)
 
 # Configuration {#model-info-configuration}
 
-You can disable if you don't want this by changing the configuration
+You can disable it by changing the configuration:
 ```lua
 {
   features = {
@@ -28,7 +28,7 @@ You can disable if you don't want this by changing the configuration
 
 # Customization {#model-info-customization}
 
-To customize how is display use the container approach
+To customize how it is displayed use the container approach:
 
 ```lua
 local app = require("laravel").app
@@ -63,4 +63,4 @@ app:instance("model_info_view", model_info_view)
 ```
 
 The plugin gets this information from the artisan command `model:show --json` you can explore it to see what variables
-are available.
+are at your disposal.
