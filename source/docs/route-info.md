@@ -7,14 +7,14 @@ section: content
 
 # Route Info {#route-info}
 
-Working with in the controller is normal to wonder how the url was, which parameter did it have,
-what middleware are set for this route.
+Working with in a controller it is normal to wonder what the url is, which parameters does it have,
+what middleware is set for the route.
 
 In order to achieve this the plugin uses `virtual_text` to display it.
 
 ![route_info_top](/assets/img/route_info_top.png)
 
-This is the default style, but it can be chant to be on the right by config
+This is the default style, but it can be changed to be on the right side by changing your config:
 
 ```lua
 {
@@ -27,20 +27,20 @@ This is the default style, but it can be chant to be on the right by config
 }
 ```
 
-or it can be disable if you don't want it at all
+or you can disable it if you don't want it at all
 
-If you are using a really wide monitor and want to put it into use the right option is for you
+If you are using a really wide monitor I recommend putting it on the right-hand side.
 
 ![route_info_right](/assets/img/route_info_right.png)
 
 # Customization {#route-info-customization}
 
-As we know customization is the sauce of neovim, you will like for sure different styles, different
-colors and the plugin will not be able to just have a different one for each user,
-but the plugin will allow you to simple set what ever you like using the container system.
+As we know customization is the sauce of neovim, you will for sure want to have different styles, different
+colors.
+The plugin will allow you to simply set what ever you prefer using the container system.
 
-To modified you can do it in your configuration after laravel has been loaded or as a `user_provider` in the
-configuration which is the intended way, but all the options are at your use.
+To modify it you change your configuration after laravel has been loaded or add a `user_provider` in the
+configuration (recommended), but all the options are at your use.
 
 ```lua
 local app = require("laravel").app
@@ -63,8 +63,8 @@ end
 app:instance("route_info_view", route_info_view)
 ```
 
-after this code is executed the plugin will use this new definition of the route_info_view, no need to reboot,
-this makes it testing it faster, you just need to focus the buffer again to trigger the autocommand.
+After this code is executed the plugin will use this new definition of the route_info_view, no need to reboot,
+this makes testing faster, as you just need to focus the buffer again to trigger the autocommand.
 This verions looks like
 
 ![route_info_custom](/assets/img/route_info_custom.png)
@@ -75,7 +75,7 @@ are available.
 
 # Missing Method {#route-info-missing-method}
 
-A common situation is that you defined a route but not implemented, the plugin doesn't want you
-to miss it or forget about it so it will use vim diagnostic to let you know about it
+A common situation is that you defined a route but it is not yet implemented, the plugin doesn't want you
+to miss it or forget about it so it will use vim diagnostic to let you know about it.
 
 ![route_info_missing_route](/assets/img/route_info_missing_route.png)
