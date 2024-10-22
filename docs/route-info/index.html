@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="Information where you need it">
+
+        <meta property="og:site_name" content="Laravel NVIM"/>
+        <meta property="og:title" content="Route Info | Laravel NVIM"/>
+        <meta property="og:description" content="Information where you need it"/>
+        <meta property="og:url" content="https://adalessa.github.io/laravel-nvim-docs/docs/route-info"/>
+        <meta property="og:image" content="/assets/img/logo.png"/>
+        <meta property="og:type" content="website"/>
+
+        <meta name="twitter:image:alt" content="Laravel NVIM">
+        <meta name="twitter:card" content="summary_large_image">
+
+        
+        <title>Laravel NVIM | Route Info</title>
+
+        <link rel="home" href="https://adalessa.github.io/laravel-nvim-docs/">
+        <link rel="icon" href="/favicon.ico">
+
+        
+                    <!-- Insert analytics code here -->
+        
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
+        <link rel="stylesheet" href="https://adalessa.github.io/laravel-nvim-docs/assets/build/css/main.css?id=e60733516b410e3764e775ae5c310270">
+
+            </head>
+
+    <body class="flex flex-col justify-between min-h-screen bg-gray-100 text-gray-800 leading-normal font-sans">
+        <header class="flex items-center shadow bg-white border-b h-24 mb-8 py-4" role="banner">
+            <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
+                <div class="flex items-center">
+                    <a href="https://adalessa.github.io/laravel-nvim-docs/" title="Laravel NVIM home" class="inline-flex items-center">
+                        <img class="h-8 md:h-10 mr-3" src="https://adalessa.github.io/laravel-nvim-docs/assets/img/logo.svg" alt="Laravel NVIM logo" />
+
+                        <h1 class="text-lg md:text-2xl text-blue-900 font-semibold hover:text-blue-600 my-0 pr-4">Laravel NVIM</h1>
+                    </a>
+                </div>
+
+                <div class="flex flex-1 justify-end items-center text-right md:pl-10">
+                                    </div>
+            </div>
+
+                <button class="flex justify-center items-center bg-blue-500 border border-blue-500 h-10 mr-4 px-5 rounded-full lg:hidden focus:outline-none"
+    onclick="navMenu.toggle()"
+>
+    <svg id="js-nav-menu-show" xmlns="http://www.w3.org/2000/svg"
+        class="fill-current text-white h-9 w-4" viewBox="0 0 32 32"
+    >
+        <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
+    </svg>
+
+    <svg id="js-nav-menu-hide" xmlns="http://www.w3.org/2000/svg"
+        class="hidden fill-current text-white h-9 w-4" viewBox="0 0 36 30"
+    >
+        <polygon points="32.8,4.4 28.6,0.2 18,10.8 7.4,0.2 3.2,4.4 13.8,15 3.2,25.6 7.4,29.8 18,19.2 28.6,29.8 32.8,25.6 22.2,15 "/>
+    </svg>
+</button>
+
+        </header>
+
+        <main role="main" class="w-full flex-auto">
+            <section class="container max-w-8xl mx-auto px-6 md:px-8 py-4">
+    <div class="flex flex-col lg:flex-row">
+        <nav id="js-nav-menu" class="nav-menu hidden lg:block">
+            <ul class="my-0">
+            <li class="pl-4">
+            
+        <a href="https://adalessa.github.io/laravel-nvim-docs/docs/getting-started"
+            class="lvl0   nav-menu__item hover:text-blue-500"
+        >
+            Getting Started
+        </a>
+    
+            
+        <ul class="my-0">
+    </ul>
+    </li>
+            <li class="pl-4">
+            
+        <a href="https://adalessa.github.io/laravel-nvim-docs/docs/route-info"
+            class="lvl0  active font-semibold text-blue-500 nav-menu__item hover:text-blue-500"
+        >
+            Route Info
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="https://adalessa.github.io/laravel-nvim-docs/docs/model-info"
+            class="lvl0   nav-menu__item hover:text-blue-500"
+        >
+            Model Info
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="https://adalessa.github.io/laravel-nvim-docs/docs/override-info"
+            class="lvl0   nav-menu__item hover:text-blue-500"
+        >
+            Override Info
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="https://adalessa.github.io/laravel-nvim-docs/docs/repositories"
+            class="lvl0   nav-menu__item hover:text-blue-500"
+        >
+            Repositories
+        </a>
+    
+            
+        <ul class="my-0">
+            <li class="pl-4">
+            
+        <a href="https://adalessa.github.io/laravel-nvim-docs/docs/repositories/commands"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Commands
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="https://adalessa.github.io/laravel-nvim-docs/docs/repositories/routes"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Routes
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="https://adalessa.github.io/laravel-nvim-docs/docs/repositories/views"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Views
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="https://adalessa.github.io/laravel-nvim-docs/docs/repositories/configs"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Configs
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="https://adalessa.github.io/laravel-nvim-docs/docs/repositories/resources"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Resources
+        </a>
+    
+    </li>
+    </ul>
+    </li>
+            <li class="pl-4">
+            
+        <a href="https://adalessa.github.io/laravel-nvim-docs/docs/user-commands"
+            class="lvl0   nav-menu__item hover:text-blue-500"
+        >
+            User Commands
+        </a>
+    
+    </li>
+    </ul>
+        </nav>
+
+        <div class="DocSearch-content w-full lg:w-3/5 break-words pb-16 lg:pl-4" v-pre>
+            <h1 id="route-info">Route Info</h1>
+
+<p>Working with in a controller it is normal to wonder what the url is, which parameters does it have,
+what middleware is set for the route.</p>
+
+<p>In order to achieve this the plugin uses <code>virtual_text</code> to display it.</p>
+
+<p><img src="https://adalessa.github.io/laravel-nvim-docs/assets/img/route_info_top.png" alt="route_info_top" /></p>
+
+<p>This is the default style, but it can be changed to be on the right side by changing your config:</p>
+
+<pre><code class="language-lua">{
+  features = {
+    route_info = {
+      enable = true,
+      view = "right",
+    },
+  },
+}
+</code></pre>
+
+<p>or you can disable it if you don't want it at all</p>
+
+<p>If you are using a really wide monitor I recommend putting it on the right-hand side.</p>
+
+<p><img src="https://adalessa.github.io/laravel-nvim-docs/assets/img/route_info_right.png" alt="route_info_right" /></p>
+
+<h1 id="route-info-customization">Customization</h1>
+
+<p>As we know customization is the sauce of neovim, you will for sure want to have different styles, different
+colors.
+The plugin will allow you to simply set what ever you prefer using the container system.</p>
+
+<p>To modify it you change your configuration after laravel has been loaded or add a <code>user_provider</code> in the
+configuration (recommended), but all the options are at your use.</p>
+
+<pre><code class="language-lua">local app = require("laravel").app
+
+local route_info_view = {}
+
+function route_info_view:get(route)
+      return {
+        virt_text = {
+          { "[",                                                "comment" },
+          { "Method: ",                                         "comment" },
+          { table.concat(route.methods, "|"),                   "@enum" },
+          { " Uri: ",                                           "comment" },
+          { route.uri,                                          "@enum" },
+          { "]",                                                "comment" },
+        },
+      }
+end
+
+app:instance("route_info_view", route_info_view)
+</code></pre>
+
+<p>After this code is executed the plugin will use this new definition of the route_info_view, no need to reboot,
+this makes testing faster, as you just need to focus the buffer again to trigger the autocommand.
+This verions looks like</p>
+
+<p><img src="https://adalessa.github.io/laravel-nvim-docs/assets/img/route_info_custom.png" alt="route_info_custom" /></p>
+
+<p>The plugin gets this information from the artisan command <code>route:list --json</code> you can explore it to see what variables
+are available.</p>
+
+<h1 id="route-info-missing-method">Missing Method</h1>
+
+<p>A common situation is that you defined a route but it is not yet implemented, the plugin doesn't want you
+to miss it or forget about it so it will use vim diagnostic to let you know about it.</p>
+
+<p><img src="https://adalessa.github.io/laravel-nvim-docs/assets/img/route_info_missing_route.png" alt="route_info_missing_route" /></p>
+        </div>
+    </div>
+</section>
+        </main>
+
+        <script src="https://adalessa.github.io/laravel-nvim-docs/assets/build/js/main.js?id=7085c195d4df1dedcef23f0051ea8415"></script>
+
+        <script>
+    const navMenu = {
+        toggle() {
+            const menu = document.getElementById('js-nav-menu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('lg:block');
+            document.getElementById('js-nav-menu-hide').classList.toggle('hidden');
+            document.getElementById('js-nav-menu-show').classList.toggle('hidden');
+        },
+    }
+</script>
+
+        <footer class="bg-white text-center text-sm mt-12 py-4" role="contentinfo">
+            <ul class="flex flex-col md:flex-row justify-center">
+                <li class="md:mr-2">
+                    &copy; <a href="https://github.com/adalessa" title="">adalessa</a> 2024.
+                </li>
+
+                <li>
+                    Built with <a href="http://jigsaw.tighten.co" title="Jigsaw by Tighten">Jigsaw</a>
+                    and <a href="https://tailwindcss.com" title="Tailwind CSS, a utility-first CSS framework">Tailwind CSS</a>.
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>
