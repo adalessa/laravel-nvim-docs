@@ -7,7 +7,7 @@ section: content
 
 # Getting Started {#getting-started}
 
-The goal of the plugin is to offer solution out of the box, just install set your keymaps and start using it.
+The goal of the plugin is to offer a solution out of the box, just install the plugin, set your keymaps and start using it.
 
 ## Install {#getting-started-install}
 
@@ -36,16 +36,16 @@ Just in case you need a suggestion you can use [lazy](https://github.com/folke/l
 }
 ```
 
-> Tip: you can check the default options in the package, a powerfull way of customize and extend is setting providers as laravel does it.
+> Tip: you can check the default options in the package, a powerful way of customizing and extending it is setting providers as Laravel does.
 
 ---
 
 ### Providers {#getting-started-providers}
 
-One of the goals of the plugin is to be a good experience and extensible as laravel is as php framework.
+One of the goals of the plugin is to be a good experience and extensible as laravel is as a php framework.
 
-You can create your provider as a lua file.
-for example the the main in the plugin but not the only one.
+You can create your own provider as a lua file.
+for example here is the main provider for the plugin: 
 ```lua
 ---@class LaravelProvider
 local laravel_provider = {}
@@ -99,9 +99,9 @@ can override current implementation given that the ones defined by the plugin ar
 ### App {#getting-started-app}
 
 Inspire by Laravel the plugin has an `app` helper that allows you to quickly use it in keymaps, plugins, etc.
-Having access and control at your disposal.
+Having access and control of it at your disposal.
 
-To acess just use just require laravel and take `app` property. it's the recomended way of use it.
+To access it just require laravel and take `app` property. it's the recomended way of using it.
 ```lua
 local app = require("laravel").app
 
@@ -113,10 +113,9 @@ end)
 
 ### Promises {#getting-started-promises}
 
-Something to notice from the previous example is the approach that I took was to use promises.
-This is due that the calls need to be async, and after having for a lot of time callbacks that
-was more paintfull.
-Promises allow to more strait forward expression. more can be found [here](https://github.com/kevinhwang91/promise-async)
+Something to note from the previous example is the approach that I took using promises.
+This is due to the fact that the calls needed to be async
+Promises allow for more strait-forward expression. more can be found [here](https://github.com/kevinhwang91/promise-async)
 
-I know it takes some time to grasp of it, but it a proven approach.
-Examples of it can be found all around the plugin code.
+I know it takes some time to grasp, but it is a proven approach.
+Examples of it can be found are all around the plugin code.
