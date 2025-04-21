@@ -29,9 +29,11 @@ Any picker is a core part of the neovim configuration and this plugin don't forg
 To enable the pickers set the config
 ```lua
 opts = {
-    pickers = {
-        enable = true,
-        provider = "telescope|snacks|fzf-lua|ui.select",
+    features = {
+        pickers = {
+            enable = true,
+            provider = "telescope|snacks|fzf-lua|ui.select",
+        }
     }
 }
 ```
